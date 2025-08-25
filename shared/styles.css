@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #fafafa;
+    overflow-x: hidden;
 }
 
 .header {
@@ -478,6 +479,8 @@ body {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    overflow: visible;
 }
 
 .about-section h3 {
@@ -685,8 +688,15 @@ body {
     }
     
     .section-stats {
-        flex-direction: column;
-        gap: 0.75rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+    
+    .stat {
+        min-width: auto;
+        flex: 0 1 auto;
     }
     
     .chapter-grid, .book-grid {
