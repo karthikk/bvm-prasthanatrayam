@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>विभूतियोग - Vibhuti Yoga - Bhagavad Gita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../shared/styles.css">
+    <style>
+        .book-header-compact {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .book-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .book-title-section {
+            text-align: left;
+        }
+        
+        .book-meta-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.5rem;
+        }
+        
+        .book-main-title {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            font-size: 1.4rem;
+            color: #8B4513;
+            margin-bottom: 0.25rem;
+        }
+        
+        .book-subtitle {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        
+        .book-stat {
+            font-size: 0.9rem;
+            color: #8B4513;
+            font-weight: 500;
+        }
+        
+        .playlist-link {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            background: #8B4513;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            transition: background-color 0.2s;
+        }
+        
+        .playlist-link:hover {
+            background: #6B3410;
+        }
+        
+        .section-divider {
+            margin: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 1.2rem;
+            color: #8B4513;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .intro-summary-container {
+            background: white;
+            margin: 1rem 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+        
+        .intro-summary-header {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .intro-summary-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #8B4513;
+        }
+        
+        .intro-summary-content {
+            padding: 1rem;
+        }
+        
+        .intro-summary-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="top-row">
+                <img src="../images/vyasa.png" alt="Vyasa" class="sage-image">
+                <div class="center-text">
+                    <h1 class="sanskrit-title">श्री गुरुभ्यो नमः</h1>
+                    <h2 class="org-name">Brahma Vidya Mandir</h2>
+                </div>
+                <img src="../images/shankara.png" alt="Shankara" class="sage-image">
+            </div>
+            
+            <div class="guru-section">
+                <img src="../images/guruji.jpeg" alt="Acharya Shri Rangaji" class="guru-image">
+                <div class="title-section">
+                    <h3 class="main-title">Bhagavad Gita Reference Material</h3>
+                    <p class="subtitle">Classes by Acharya Shri Rangaji</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container" id="verse-container">
+            <!-- Content will be rendered here by VerseViewer -->
+        </div>
+    </main>
+
+    <script src="../shared/verse-viewer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new VerseViewer('../data/bhagavad-gita/chapter-10.json', 'verse-container');
+        });
+    </script>
+</body>
+</html>

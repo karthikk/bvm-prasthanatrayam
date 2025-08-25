@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal Upanishads - Brahma Vidya Mandir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="top-row">
+                <img src="../images/vyasa.png" alt="Vyasa" class="sage-image">
+                <div class="center-text">
+                    <h1 class="sanskrit-title">श्री गुरुभ्यो नमः</h1>
+                    <h2 class="org-name">Brahma Vidya Mandir</h2>
+                </div>
+                <img src="../images/shankara.png" alt="Shankara" class="sage-image">
+            </div>
+            
+            <div class="guru-section">
+                <img src="../images/guruji.jpeg" alt="Acharya Shri Rangaji" class="guru-image">
+                <div class="title-section">
+                    <h3 class="main-title">उपनिषदः</h3>
+                    <p class="subtitle">Classes by Acharya Shri Rangaji</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> 
+                <span>></span> 
+                <span>Principal Upanishads</span>
+            </div>
+            
+            <a href="../index.html" class="back-button">← Back to Home</a>
+            
+            <div class="intro-section">
+                <h2 class="section-heading">मुख्य उपनिषदः</h2>
+                <p class="intro-text">The twelve principal Upanishads, representing the culmination of Vedic wisdom and the foundation of Vedantic philosophy</p>
+            </div>
+
+            <div class="book-grid" id="upanishads-grid">
+                <!-- Upanishads will be loaded here -->
+            </div>
+
+            <div class="about-section">
+                <h3>About the Principal Upanishads</h3>
+                <p>The Upanishads, literally meaning "sitting down near" (a teacher), represent the philosophical culmination of the Vedic tradition. These twelve principal Upanishads, commented upon by Adi Shankaracharya, reveal the fundamental truth of non-dual Brahman and provide the direct path to Self-realization through knowledge, contemplation, and spiritual practice.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const upanishads = [
+            {
+                name: "ईशावास्य उपनिषद्",
+                english: "Isha Upanishad",
+                description: "The path of renunciation and right action, teaching the vision of the Self in all beings",
+                mantras: 18,
+                veda: "Shukla Yajur Veda",
+                enabled: true
+            },
+            {
+                name: "केन उपनिषद्",
+                english: "Kena Upanishad", 
+                description: "The inquiry into the power behind the senses and mind, revealing Brahman as pure consciousness",
+                mantras: 35,
+                veda: "Sama Veda",
+                enabled: true
+            },
+            {
+                name: "कठ उपनिषद्",
+                english: "Katha Upanishad",
+                description: "The dialogue between Nachiketa and Death, teaching the discrimination between the eternal and temporal",
+                mantras: 119,
+                veda: "Krishna Yajur Veda",
+                enabled: true
+            },
+            {
+                name: "प्रश्न उपनिषद्",
+                english: "Prashna Upanishad",
+                description: "Six fundamental questions about existence, life, and the ultimate reality answered by sage Pippalada",
+                mantras: 63,
+                veda: "Atharva Veda",
+                enabled: true
+            },
+            {
+                name: "मुण्डक उपनिषद्",
+                english: "Mundaka Upanishad",
+                description: "The distinction between higher and lower knowledge, leading to the realization of Brahman",
+                mantras: 64,
+                veda: "Atharva Veda",
+                enabled: true
+            },
+            {
+                name: "माण्डूक्य उपनिषद्",
+                english: "Mandukya Upanishad",
+                description: "The analysis of consciousness through the states of waking, dreaming, deep sleep, and Turiya",
+                mantras: 12,
+                veda: "Atharva Veda",
+                enabled: true
+            },
+            {
+                name: "तैत्तिरीय उपनिषद्",
+                english: "Taittiriya Upanishad",
+                description: "The five sheaths of existence and the progressive realization of Brahman as Bliss",
+                mantras: 59,
+                veda: "Krishna Yajur Veda",
+                enabled: true
+            },
+            {
+                name: "ऐतरेय उपनिषद्",
+                english: "Aitareya Upanishad",
+                description: "The creation of the universe and the individual, establishing consciousness as the ultimate reality",
+                mantras: 33,
+                veda: "Rig Veda",
+                enabled: true
+            },
+            {
+                name: "छान्दोग्य उपनिषद्",
+                english: "Chandogya Upanishad",
+                description: "The great statements 'Tat tvam asi' and other fundamental teachings on the nature of Brahman",
+                mantras: 628,
+                veda: "Sama Veda",
+                enabled: true
+            },
+            {
+                name: "बृहदारण्यक उपनिषद्",
+                english: "Brihadaranyaka Upanishad",
+                description: "The largest Upanishad, containing the profound dialogues of Yajnavalkya and comprehensive Vedantic teachings",
+                mantras: 789,
+                veda: "Shukla Yajur Veda",
+                enabled: true
+            },
+            {
+                name: "श्वेताश्वतर उपनिषद्",
+                english: "Svetasvatara Upanishad",
+                description: "The synthesis of knowledge, devotion, and meditation, revealing the Lord as the cause of the universe",
+                mantras: 113,
+                veda: "Krishna Yajur Veda",
+                enabled: true
+            },
+            {
+                name: "कैवल्य उपनिषद्",
+                english: "Kaivalya Upanishad",
+                description: "The path to absolute freedom (Kaivalya) through the realization of the non-dual Self",
+                mantras: 25,
+                veda: "Atharva Veda",
+                enabled: true
+            }
+        ];
+
+        function renderUpanishads() {
+            const grid = document.getElementById('upanishads-grid');
+            const upanishadsHtml = upanishads.map((upanishad, index) => `
+                <div class="book-card ${!upanishad.enabled ? 'disabled' : ''}" 
+                     onclick="${upanishad.enabled ? `location.href='${getUpanishadFileName(upanishad.english)}.html'` : ''}">
+                    <div class="book-title">${upanishad.name}</div>
+                    <div class="book-subtitle">${upanishad.english}</div>
+                    <div class="book-description">${upanishad.description}</div>
+                    <div class="book-meta">
+                        <span>${upanishad.mantras} Mantras</span>
+                        <span>${upanishad.veda}</span>
+                        <span>${upanishad.enabled ? 'Available' : 'Coming Soon'}</span>
+                    </div>
+                </div>
+            `).join('');
+            
+            grid.innerHTML = upanishadsHtml;
+        }
+
+        function getUpanishadFileName(englishName) {
+            return englishName.toLowerCase().replace(/ /g, '-').replace('upanishad', '').trim().replace(/-$/, '');
+        }
+
+        // Load upanishads on page load
+        document.addEventListener('DOMContentLoaded', renderUpanishads);
+    </script>
+</body>
+</html>

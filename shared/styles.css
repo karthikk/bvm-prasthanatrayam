@@ -1,0 +1,712 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+.header {
+    background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.sage-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.center-text {
+    text-align: center;
+    flex: 1;
+    margin: 0 2rem;
+}
+
+.sanskrit-title {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.org-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.guru-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    position: relative;
+}
+
+.guru-section .guru-image {
+    position: absolute;
+    left: 0;
+}
+
+.title-section {
+    flex: 1;
+    text-align: center;
+    max-width: 500px;
+}
+
+.guru-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255,255,255,0.4);
+}
+
+.title-section {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.breadcrumb {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #8B4513;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    margin: 0 0.5rem;
+}
+
+.chapter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.chapter-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+
+.chapter-card:hover:not(.disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.chapter-card.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #f5f5f5;
+}
+
+.chapter-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #8B4513;
+}
+
+.chapter-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.progress-indicator {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 4px;
+    background: #e0e0e0;
+    border-radius: 2px;
+    margin: 0 0.5rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #4CAF50;
+    transition: width 0.3s;
+}
+
+.section-list {
+    margin: 2rem 0;
+}
+
+.section-card {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.section-header {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header:hover {
+    background: #f0f1f2;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #8B4513;
+}
+
+.toggle-icon {
+    transition: transform 0.2s;
+}
+
+.toggle-icon.expanded {
+    transform: rotate(180deg);
+}
+
+.topics-grid {
+    padding: 1rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.topic-item {
+    padding: 0.75rem;
+    background: #fafafa;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-left: 3px solid transparent;
+}
+
+.topic-item:hover {
+    background: #f0f7ff;
+    border-left-color: #8B4513;
+}
+
+.topic-item.completed {
+    border-left-color: #4CAF50;
+}
+
+.topic-title {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.topic-meta {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.adhikaranam-view {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.adhikaranam-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #8B4513;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.content-section {
+    margin: 1.5rem 0;
+}
+
+.section-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #8B4513;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.content-text {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.sanskrit-text {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 1.1rem;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 4px solid #8B4513;
+}
+
+.sutram-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sutram-item {
+    background: #f0f7ff;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 4px solid #2196F3;
+}
+
+.youtube-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.youtube-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #8B4513;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    transition: background-color 0.2s;
+}
+
+.youtube-link:hover {
+    background: #6B3410;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #8B4513;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background: #6B3410;
+}
+
+/* Main Index Styles */
+.intro-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-heading {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 2rem;
+    color: #8B4513;
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.section-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #8B4513, #D2691E, #FF6B35);
+}
+
+.section-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.section-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 1.5rem;
+    color: #8B4513;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.section-description {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.section-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #8B4513;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.progress-section {
+    margin-top: 1rem;
+}
+
+.about-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.about-section h3 {
+    color: #8B4513;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.about-section p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Verse/Shloka Styles */
+.verse-container {
+    background: white;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.verse-header {
+    background: linear-gradient(135deg, #8B4513, #A0522D);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.verse-number {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.verse-content {
+    padding: 1.5rem;
+}
+
+.verse-sanskrit {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.verse-transliteration {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.verse-translation {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    border-left: 4px solid #8B4513;
+    padding-left: 1rem;
+}
+
+.youtube-link .timestamp {
+    background: rgba(255,255,255,0.2);
+    padding: 0.1rem 0.4rem;
+    border-radius: 10px;
+    font-size: 0.7rem;
+}
+
+/* Book/Chapter Index Styles */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.book-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.book-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #8B4513, #D2691E);
+}
+
+.book-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.book-card.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.book-title {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 1.3rem;
+    color: #8B4513;
+    margin-bottom: 0.5rem;
+}
+
+.book-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.book-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.book-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #888;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 0.75rem;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        padding: 0 0.5rem;
+    }
+    
+    .top-row {
+        margin-bottom: 0.75rem;
+    }
+    
+    .sage-image {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .center-text {
+        margin: 0 1rem;
+    }
+    
+    .sanskrit-title {
+        font-size: 1.4rem;
+    }
+    
+    .org-name {
+        font-size: 1rem;
+    }
+    
+    .guru-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .guru-section {
+        flex-direction: column;
+        gap: 0.75rem;
+        position: static;
+    }
+    
+    .guru-section .guru-image {
+        position: static;
+    }
+    
+    .main-title {
+        font-size: 1.2rem;
+    }
+    
+    .container {
+        padding: 1rem 0.5rem;
+    }
+    
+    .main-sections {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .section-card {
+        padding: 1.5rem;
+    }
+    
+    .section-stats {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .chapter-grid, .book-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .adhikaranam-view {
+        padding: 1rem;
+    }
+    
+    .adhikaranam-title {
+        font-size: 1.3rem;
+    }
+    
+    .verse-content {
+        padding: 1rem;
+    }
+    
+    .verse-sanskrit {
+        font-size: 1.1rem;
+    }
+}

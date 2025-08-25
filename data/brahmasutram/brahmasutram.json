@@ -1,0 +1,108 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "title": "अध्याय १ - साधन अध्याय",
+      "description": "The foundation chapter dealing with the means of knowledge and preliminary concepts",
+      "sections": [
+        {
+          "id": 1,
+          "title": "पाद १ - संकल्प पाद", 
+          "adhikaranams": [
+            {
+              "id": 1,
+              "title": "जिज्ञासाधिकरणम्",
+              "vishaya_vakyam": "अथातो ब्रह्मजिज्ञासा॥",
+              "samshayam": "What is the proper time and qualification for starting the inquiry into Brahman? Is any special preparation needed?",
+              "purvapaksha": "Since Brahman is already known through the Vedas, there is no need for systematic inquiry. One can directly proceed to meditation and realization.",
+              "siddhanta": "Though Brahman may be mentioned in the Vedas, its true nature requires systematic inquiry through reasoning, scriptural study, and proper understanding. The inquiry should begin after completing the study of dharma (righteous duties) and developing the fourfold qualifications (sadhana chatushtaya).",
+              "shankara_additional": [
+                "Shankara clarifies that 'athah' (now/then) indicates the proper sequence - Brahma inquiry follows dharma inquiry",
+                "The inquiry is not merely academic but aimed at liberation from samsara",
+                "Proper qualifications include viveka (discrimination), vairagya (dispassion), sama-dama (mental disciplines), and mumukshutva (intense desire for liberation)"
+              ],
+              "sutrams": [
+                "अथातो ब्रह्मजिज्ञासा"
+              ],
+              "youtube_links": [
+                "https://youtube.com/watch?v=sample1",
+                "https://youtube.com/watch?v=sample2"
+              ],
+              "completed": true
+            },
+            {
+              "id": 2,
+              "title": "जन्माद्यधिकरणम्",
+              "vishaya_vakyam": "जन्माद्यस्य यतः॥",
+              "samshayam": "What is the definition or nature of Brahman that we are inquiring into?",
+              "purvapaksha": "Brahman could be the material cause alone, or the efficient cause alone, or some limited deity who creates the world.",
+              "siddhanta": "Brahman is that supreme reality from which the creation, sustenance, and dissolution of this universe proceed. It is both the material and efficient cause of the universe, being of the nature of pure consciousness.",
+              "shankara_additional": [
+                "The word 'janma' includes sthiti (sustenance) and pralaya (dissolution) by the rule of 'janmadyasya'",
+                "Brahman is not just any cause, but the intelligent cause, as evidenced by the orderly creation",
+                "The universe's emergence from Brahman is not like a pot from clay, but like waves from ocean - non-different in essence"
+              ],
+              "sutrams": [
+                "जन्माद्यस्य यतः"
+              ],
+              "youtube_links": [
+                "https://youtube.com/watch?v=sample3"
+              ],
+              "completed": true
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "पाद २ - अविरोध पाद",
+          "adhikaranams": [
+            {
+              "id": 3,
+              "title": "सर्वत्र प्रसिद्धिधिकरणम्",
+              "vishaya_vakyam": "सर्वत्र प्रसिद्धेः॥",
+              "samshayam": "How do we know that the Brahman mentioned in different Upanishads is the same entity?",
+              "purvapaksha": "Different Upanishads might be referring to different deities or aspects of divinity, not the same Brahman.",
+              "siddhanta": "Brahman is famous (prasiddha) everywhere in all Upanishads as the supreme reality. The consistent description across all scriptures as sat-chit-ananda, the cause of the universe, and the ultimate goal establishes its identity.",
+              "shankara_additional": [
+                "The term 'prasiddhi' indicates not mere fame but established recognition through valid means of knowledge",
+                "Apparent differences in descriptions point to different aspects or approaches, not different entities",
+                "The unity of Brahman is established through statements like 'sarvam khalvidam brahma' (all this is indeed Brahman)"
+              ],
+              "sutrams": [
+                "सर्वत्र प्रसिद्धेः"
+              ],
+              "youtube_links": [],
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "enabled": true,
+      "progress": 65
+    },
+    {
+      "id": 2,
+      "title": "अध्याय २ - अविरोध अध्याय",
+      "description": "The chapter of non-contradiction, establishing Vedanta's position",
+      "sections": [],
+      "enabled": false,
+      "progress": 0
+    },
+    {
+      "id": 3,
+      "title": "अध्याय ३ - साधन अध्याय",
+      "description": "The chapter dealing with the means and spiritual practices",
+      "sections": [],
+      "enabled": false,
+      "progress": 0
+    },
+    {
+      "id": 4,
+      "title": "अध्याय ४ - फल अध्याय", 
+      "description": "The chapter dealing with the fruits and results of realization",
+      "sections": [],
+      "enabled": false,
+      "progress": 0
+    }
+  ]
+}

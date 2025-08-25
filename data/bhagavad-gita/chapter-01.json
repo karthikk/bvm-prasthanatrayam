@@ -1,0 +1,76 @@
+{
+  "chapter": 1,
+  "title": "अर्जुनविषादयोग",
+  "english_title": "The Yoga of Arjuna's Dejection",
+  "total_shlokas": 47,
+  "playlist_url": "https://youtube.com/playlist?list=SAMPLE_GITA_PLAYLIST_ID",
+  "introduction": [
+    {
+      "title": "Chapter 1 - Introduction & Context Setting",
+      "description": "Overview of the Kurukshetra war and setting the stage for Arjuna's dilemma",
+      "videos": [
+        {
+          "title": "Gita Chapter 1 - Historical Context",
+          "url": "https://youtube.com/watch?v=sample_intro1",
+          "start_time": "0:00",
+          "end_time": "45:30"
+        }
+      ]
+    }
+  ],
+  "shlokas": [
+    {
+      "number": 1,
+      "sanskrit": "धृतराष्ट्र उवाच।\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥",
+      "transliteration": "dhṛtarāṣṭra uvāca\ndharma-kṣetre kuru-kṣetre samavetā yuyutsavaḥ\nmāmakāḥ pāṇḍavāścaiva kimakurvata sañjaya",
+      "videos": [
+        {
+          "title": "Chapter 1 - Opening Prayer & Context",
+          "url": "https://youtube.com/watch?v=sample1",
+          "start_time": "2:15",
+          "end_time": "8:30"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sanskrit": "सञ्जय उवाच।\nदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा।\nआचार्यमुपसङ्गम्य राजा वचनमब्रवीत्॥",
+      "transliteration": "sañjaya uvāca\ndṛṣṭvā tu pāṇḍavānīkaṃ vyūḍhaṃ duryodhanaśtadā\nācāryamupasaṅgamya rājā vacanamabravīt",
+      "videos": [
+        {
+          "title": "Chapter 1 - The Battlefield Setup",
+          "url": "https://youtube.com/watch?v=sample2",
+          "start_time": "8:45",
+          "end_time": "15:20"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sanskrit": "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता॥",
+      "transliteration": "paśyaitāṃ pāṇḍuputrāṇāmācārya mahatīṃ camūm\nvyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
+      "videos": [
+        {
+          "title": "Chapter 1 - Duryodhana's Assessment",
+          "url": "https://youtube.com/watch?v=sample3",
+          "start_time": "15:30",
+          "end_time": "22:10"
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "title": "Chapter 1 - Key Learnings & Conclusion",
+      "description": "Understanding Arjuna's crisis and the need for spiritual guidance",
+      "videos": [
+        {
+          "title": "Gita Chapter 1 - Summary and Reflections",
+          "url": "https://youtube.com/watch?v=sample_summary1",
+          "start_time": "0:00",
+          "end_time": "30:15"
+        }
+      ]
+    }
+  ]
+}

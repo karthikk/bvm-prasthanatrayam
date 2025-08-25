@@ -1,0 +1,74 @@
+{
+  "name": "मुण्डकोपनिषद्",
+  "sanskrit_name": "मुण्डकोपनिषद्", 
+  "english_title": "Mundaka Upanishad",
+  "total_mantras": 64,
+  "playlist_url": "https://youtube.com/playlist?list=SAMPLE_mundaka_PLAYLIST_ID",
+  "veda": "Atharva Veda",
+  "structure_type": "hierarchical",
+  "sections": [
+    {
+      "id": 1,
+      "title": "प्रथम मुण्डक",
+      "english_title": "First Mundaka", 
+      "description": "The source of all knowledge and the supreme Brahman",
+      "total_mantras": 20,
+      "subsections": [
+        {
+          "id": 1,
+          "title": "प्रथम खण्ड",
+          "english_title": "First Khanda",
+          "mantra_count": 9
+        },
+        {
+          "id": 2, 
+          "title": "द्वितीय खण्ड",
+          "english_title": "Second Khanda",
+          "mantra_count": 11
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "द्वितीय मुण्डक",
+      "english_title": "Second Mundaka",
+      "description": "The distinction between lower and higher knowledge", 
+      "total_mantras": 22,
+      "subsections": [
+        {
+          "id": 1,
+          "title": "प्रथम खण्ड", 
+          "english_title": "First Khanda",
+          "mantra_count": 10
+        },
+        {
+          "id": 2,
+          "title": "द्वितीय खण्ड",
+          "english_title": "Second Khanda", 
+          "mantra_count": 12
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "तृतीय मुण्डक",
+      "english_title": "Third Mundaka",
+      "description": "The path to Self-realization and liberation",
+      "total_mantras": 22,
+      "subsections": [
+        {
+          "id": 1,
+          "title": "प्रथम खण्ड",
+          "english_title": "First Khanda",
+          "mantra_count": 10
+        },
+        {
+          "id": 2,
+          "title": "द्वितीय खण्ड", 
+          "english_title": "Second Khanda",
+          "mantra_count": 12
+        }
+      ]
+    }
+  ]
+}

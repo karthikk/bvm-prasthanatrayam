@@ -1,0 +1,92 @@
+{
+  "name": "बृहदारण्यकोपनिषद्",
+  "sanskrit_name": "बृहदारण्यकोपनिषद्", 
+  "english_title": "Brihadaranyaka Upanishad",
+  "total_mantras": 200,
+  "playlist_url": "https://youtube.com/playlist?list=SAMPLE_brihadaranyaka_PLAYLIST_ID",
+  "veda": "Shukla Yajur Veda",
+  "structure_type": "hierarchical",
+  "sections": [
+    {
+      "id": 1,
+      "title": "प्रथम कान्ड",
+      "english_title": "First Kanda", 
+      "description": "The nature of creation and the cosmic principles",
+      "total_mantras": 65,
+      "subsections": [
+        {
+          "id": 1,
+          "title": "प्रथम अध्याय",
+          "english_title": "First Adhyaya",
+          "mantra_count": 28
+        },
+        {
+          "id": 2, 
+          "title": "द्वितीय अध्याय",
+          "english_title": "Second Adhyaya",
+          "mantra_count": 20
+        },
+        {
+          "id": 3, 
+          "title": "तृतीय अध्याय",
+          "english_title": "Third Adhyaya",
+          "mantra_count": 17
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "द्वितीय कान्ड",
+      "english_title": "Second Kanda",
+      "description": "The individual self and cosmic correspondences", 
+      "total_mantras": 68,
+      "subsections": [
+        {
+          "id": 1,
+          "title": "प्रथम अध्याय", 
+          "english_title": "First Adhyaya",
+          "mantra_count": 25
+        },
+        {
+          "id": 2,
+          "title": "द्वितीय अध्याय",
+          "english_title": "Second Adhyaya", 
+          "mantra_count": 22
+        },
+        {
+          "id": 3,
+          "title": "तृतीय अध्याय",
+          "english_title": "Third Adhyaya", 
+          "mantra_count": 21
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "तृतीय कान्ड",
+      "english_title": "Third Kanda",
+      "description": "The supreme knowledge and Self-realization",
+      "total_mantras": 67,
+      "subsections": [
+        {
+          "id": 1,
+          "title": "प्रथम अध्याय",
+          "english_title": "First Adhyaya",
+          "mantra_count": 24
+        },
+        {
+          "id": 2,
+          "title": "द्वितीय अध्याय", 
+          "english_title": "Second Adhyaya",
+          "mantra_count": 23
+        },
+        {
+          "id": 3,
+          "title": "तृतीय अध्याय", 
+          "english_title": "Third Adhyaya",
+          "mantra_count": 20
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagavad Gita - Brahma Vidya Mandir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="top-row">
+                <img src="../images/vyasa.png" alt="Vyasa" class="sage-image">
+                <div class="center-text">
+                    <h1 class="sanskrit-title">श्री गुरुभ्यो नमः</h1>
+                    <h2 class="org-name">Brahma Vidya Mandir</h2>
+                </div>
+                <img src="../images/shankara.png" alt="Shankara" class="sage-image">
+            </div>
+            
+            <div class="guru-section">
+                <img src="../images/guruji.jpeg" alt="Acharya Shri Rangaji" class="guru-image">
+                <div class="title-section">
+                    <h3 class="main-title">श्रीमद्भगवद्गीता</h3>
+                    <p class="subtitle">Classes by Acharya Shri Rangaji</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> 
+                <span>></span> 
+                <span>Bhagavad Gita</span>
+            </div>
+            
+            <a href="../index.html" class="back-button">← Back to Home</a>
+            
+            <div class="intro-section">
+                <h2 class="section-heading">श्रीमद्भगवद्गीता</h2>
+                <p class="intro-text">The divine dialogue between Lord Krishna and Arjuna, revealing the fundamental truths of dharma, devotion, and liberation</p>
+            </div>
+
+            <div class="book-grid" id="chapters-grid">
+                <!-- Chapters will be loaded here -->
+            </div>
+
+            <div class="about-section">
+                <h3>About the Bhagavad Gita</h3>
+                <p>The Bhagavad Gita, often referred to as the Gita, is a sacred Hindu text that forms part of the epic Mahabharata. It consists of 700 verses arranged in 18 chapters, presenting a comprehensive guide to spiritual wisdom and practical philosophy through the conversation between Prince Arjuna and Lord Krishna on the battlefield of Kurukshetra.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const chapters = [
+            {
+                chapter: 1,
+                title: "अर्जुनविषादयोग",
+                subtitle: "The Yoga of Arjuna's Dejection",
+                description: "Arjuna's moral and emotional crisis upon seeing his kinsmen arrayed for battle",
+                verses: 47,
+                enabled: true
+            },
+            {
+                chapter: 2,
+                title: "सांख्ययोग",
+                subtitle: "The Yoga of Knowledge",
+                description: "Krishna's fundamental teachings on the eternal nature of the soul and the path of knowledge",
+                verses: 72,
+                enabled: false
+            },
+            {
+                chapter: 3,
+                title: "कर्मयोग",
+                subtitle: "The Yoga of Action",
+                description: "The path of selfless action and the performance of duty without attachment to results",
+                verses: 43,
+                enabled: false
+            },
+            {
+                chapter: 4,
+                title: "ज्ञानकर्मसंन्यासयोग",
+                subtitle: "The Yoga of Knowledge and Renunciation of Action",
+                description: "The relationship between knowledge and action, and the divine incarnation",
+                verses: 42,
+                enabled: false
+            },
+            {
+                chapter: 5,
+                title: "कर्मसंन्यासयोग",
+                subtitle: "The Yoga of Renunciation of Action",
+                description: "The comparative merits of the path of action and the path of renunciation",
+                verses: 29,
+                enabled: false
+            },
+            {
+                chapter: 6,
+                title: "आत्मसंयमयोग",
+                subtitle: "The Yoga of Self-Control",
+                description: "The practice of meditation and the control of the mind",
+                verses: 47,
+                enabled: false
+            },
+            {
+                chapter: 7,
+                title: "ज्ञानविज्ञानयोग",
+                subtitle: "The Yoga of Knowledge and Realization",
+                description: "Krishna reveals His divine nature and the different ways beings worship the Divine",
+                verses: 30,
+                enabled: false
+            },
+            {
+                chapter: 8,
+                title: "अक्षरब्रह्मयोग",
+                subtitle: "The Yoga of the Imperishable Absolute",
+                description: "The nature of the Supreme Absolute and the path of attaining It",
+                verses: 28,
+                enabled: false
+            },
+            {
+                chapter: 9,
+                title: "राजविद्याराजगुह्ययोग",
+                subtitle: "The Yoga of Royal Knowledge and Royal Secret",
+                description: "The most confidential knowledge about devotion and surrender to the Divine",
+                verses: 34,
+                enabled: false
+            },
+            {
+                chapter: 10,
+                title: "विभूतियोग",
+                subtitle: "The Yoga of Divine Glories",
+                description: "Krishna describes His divine manifestations and cosmic glories",
+                verses: 42,
+                enabled: false
+            },
+            {
+                chapter: 11,
+                title: "विश्वरूपदर्शनयोग",
+                subtitle: "The Yoga of the Vision of the Universal Form",
+                description: "Arjuna's vision of Krishna's cosmic form and its profound impact",
+                verses: 55,
+                enabled: false
+            },
+            {
+                chapter: 12,
+                title: "भक्तियोग",
+                subtitle: "The Yoga of Devotion",
+                description: "The path of devotion and the qualities of a true devotee",
+                verses: 20,
+                enabled: false
+            },
+            {
+                chapter: 13,
+                title: "क्षेत्रक्षेत्रज्ञविभागयोग",
+                subtitle: "The Yoga of the Distinction between the Field and Knower of the Field",
+                description: "The distinction between the body (field) and the soul (knower of the field)",
+                verses: 35,
+                enabled: false
+            },
+            {
+                chapter: 14,
+                title: "गुणत्रयविभागयोग",
+                subtitle: "The Yoga of the Division of Three Gunas",
+                description: "The three modes of material nature and transcending them",
+                verses: 27,
+                enabled: false
+            },
+            {
+                chapter: 15,
+                title: "पुरुषोत्तमयोग",
+                subtitle: "The Yoga of the Supreme Person",
+                description: "The cosmic tree of existence and the Supreme Purusha",
+                verses: 20,
+                enabled: false
+            },
+            {
+                chapter: 16,
+                title: "दैवासुरसम्पद्विभागयोग",
+                subtitle: "The Yoga of the Division between Divine and Demoniac Natures",
+                description: "The divine and demoniac qualities and their respective destinies",
+                verses: 24,
+                enabled: false
+            },
+            {
+                chapter: 17,
+                title: "श्रद्धात्रयविभागयोग",
+                subtitle: "The Yoga of the Division of Three Types of Faith",
+                description: "The three types of faith and their expressions in worship, food, and austerity",
+                verses: 28,
+                enabled: false
+            },
+            {
+                chapter: 18,
+                title: "मोक्षसंन्यासयोग",
+                subtitle: "The Yoga of Liberation through Renunciation",
+                description: "The final synthesis of all teachings and the ultimate call to surrender",
+                verses: 78,
+                enabled: false
+            }
+        ];
+
+        function renderChapters() {
+            const grid = document.getElementById('chapters-grid');
+            const chaptersHtml = chapters.map(chapter => `
+                <div class="book-card ${!chapter.enabled ? 'disabled' : ''}" 
+                     onclick="${chapter.enabled ? `location.href='chapter-${chapter.chapter.toString().padStart(2, '0')}.html'` : ''}">
+                    <div class="book-title">अध्याय ${chapter.chapter}</div>
+                    <div class="book-title">${chapter.title}</div>
+                    <div class="book-subtitle">${chapter.subtitle}</div>
+                    <div class="book-description">${chapter.description}</div>
+                    <div class="book-meta">
+                        <span>${chapter.verses} Shlokas</span>
+                        <span>${chapter.enabled ? 'Available' : 'Coming Soon'}</span>
+                    </div>
+                </div>
+            `).join('');
+            
+            grid.innerHTML = chaptersHtml;
+        }
+
+        // Load chapters on page load
+        document.addEventListener('DOMContentLoaded', renderChapters);
+    </script>
+</body>
+</html>

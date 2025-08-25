@@ -1,0 +1,77 @@
+{
+  "name": "ईशावास्य उपनिषद्",
+  "sanskrit_name": "ईशावास्य उपनिषद्",
+  "english_title": "Ishavasya Upanishad",
+  "total_mantras": 18,
+  "playlist_url": "https://youtube.com/playlist?list=PL7qtWZUUoJN-fHSCHo7kQjj80hjkjuuRP",
+  "veda": "Shukla Yajur Veda",
+  "introduction": [
+    {
+      "title": "Isha Upanishad - Introduction & Context",
+      "description": "Introduction to the Upanishad, its significance and place in Vedantic literature",
+      "videos": [
+        {
+          "title": "Isha Upanishad - Opening Class",
+          "url": "https://youtube.com/watch?v=sample_isha_intro1",
+          "start_time": "0:00",
+          "end_time": "42:20"
+        }
+      ]
+    }
+  ],
+  "mantras": [
+    {
+      "number": 1,
+      "sanskrit": "ईशा वास्यमिदं सर्वं यत्किं च जगत्यां जगत् ।\n तेन त्यक्तेन भुञ्जीथा मा गृधः कस्य स्विद्धनम् ॥ १ ॥ ",
+      "transliteration": "īśāvāsyamidaṃ sarvaṃ yatkiñca jagatyāṃ jagat\ntyaktena bhuñjīthāḥ mā gṛdhaḥ kasyasviddhanam",
+      "videos": [
+        {
+          "title": "Isha Upanishad - Opening Mantra",
+          "url": "https://youtube.com/watch?v=sample1",
+          "start_time": "2:30",
+          "end_time": "12:15"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतं समाः।\nएवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे॥",
+      "transliteration": "kurvanneveha karmāṇi jijīviṣeccataṃ samāḥ\nevaṃ tvayi nānyatheto'sti na karma lipyate nare",
+      "videos": [
+        {
+          "title": "Isha Upanishad - The Path of Action",
+          "url": "https://youtube.com/watch?v=sample2",
+          "start_time": "12:30",
+          "end_time": "22:45"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sanskrit": "असुर्या नाम ते लोका अन्धेन तमसाऽऽवृताः।\nतांस्ते प्रेत्याभिगच्छन्ति ये के चाऽऽत्महनो जनाः॥",
+      "transliteration": "asuryā nāma te lokā andhena tamasā''vṛtāḥ\ntāṃste pretyābhigacchanti ye ke cā''tmahano janāḥ",
+      "videos": [
+        {
+          "title": "Isha Upanishad - The Fate of the Self-destroyers",
+          "url": "https://youtube.com/watch?v=sample3",
+          "start_time": "23:00",
+          "end_time": "31:20"
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "title": "Isha Upanishad - Summary & Integration",
+      "description": "Consolidating the teachings and understanding the practical application",
+      "videos": [
+        {
+          "title": "Isha Upanishad - Final Reflections",
+          "url": "https://youtube.com/watch?v=sample_isha_summary1",
+          "start_time": "0:00",
+          "end_time": "38:45"
+        }
+      ]
+    }
+  ]
+}
